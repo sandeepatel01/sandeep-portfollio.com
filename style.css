@@ -332,3 +332,177 @@ a {
     font-weight: bold;
     transition: all 3s;
 }
+
+/* ***************************** Project Section CSS ********************************** */
+.project-section {
+    background-color: rgb(231, 231, 231);
+    margin-top: 4rem;
+}
+
+.project-heading {
+    color: var(--bgOrange);
+    font-size: 90px;
+    text-align: center;
+    padding-top: 30px;
+    /* font-weight: 800; */
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 120px;
+}
+
+.project-cart {
+    width: 90%;
+    height: 550px;
+    /* background-image: url(./images/projects/Project1.png); */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+}
+
+.project-cart::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #1f1f1f9a;
+    /* transform: scaleX(1); */
+    z-index: 0;
+}
+
+.project-cart::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transform: all 0.4s;
+    z-index: 1;
+}
+
+.project-cart:hover::before {
+    transform: scaleX(1);
+}
+
+.project-number {
+    position: absolute;
+    font-size: 200px;
+    font-weight: 600;
+    color: white;
+    z-index: 10;
+    display: none;
+}
+
+.project-number-right {
+    right: -40px;
+    top: -45px;
+}
+
+.project-number-left {
+    left: -40px;
+    top: -45px;
+}
+
+.project-cart:hover .project-number {
+    display: block;
+    transform: 0.4s;
+}
+
+.project-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 5;
+    padding: 2em;
+    gap: 1em;
+    bottom: 20%;
+    transition: all 0.4s;
+}
+
+.project-content-left {
+    left: 10%;
+}
+
+.project-content-right {
+    right: 10%;
+}
+
+.project-skills-icon {
+    display: flex;
+    width: 60%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-skill {
+    width: 40px;
+}
+
+.project-cart-heading {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.project-cart-sub-heading {
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.project-btn-grp {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+
+.btn-project:hover {
+    border: none;
+}
+
+.icon {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+
+.icon:hover {
+    color: var(--bgOrange);
+    transition: 0.4s;
+}
+
+.project-cart:hover .project-content {
+    transform: scale(1.1);
+}
+
+#project-1 {
+    background-image: url(./images/projects/Project1.png);
+}
+
+#project-2 {
+    margin-left: 120px;
+    background-image: url(./images/projects/Project2.png);
+}
+
+#project-3 {
+    background-image: url(./images/projects/Project3.png);
+}
+
+#project-4 {
+    margin-left: 120px;
+    background-image: url(./images/projects/Project4.png);
+}
