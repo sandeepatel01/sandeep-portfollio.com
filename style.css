@@ -46,7 +46,8 @@ img {
 .logo-text {
     margin-left: -1.4rem;
     font-size: 28px;
-    color: lightseagreen;
+    /* color: lightseagreen; */
+    color: #40c5d8;
     letter-spacing: -1px;
 }
 
@@ -69,7 +70,8 @@ a {
 }
 
 .nav-item div a {
-    color: lightseagreen;
+    /* color: lightseagreen; */
+    color: #40c5d8;
     font-weight: 500px;
     letter-spacing: -1px;
 }
@@ -576,4 +578,16 @@ a {
 
 .skills-logo:hover {
     transform: scale(1.2);
+}
+
+.skill-fade-text {
+    position: absolute;
+    font-size: 15rem;
+    font-style: bold;
+    font-weight: 900;
+    color: rgb(231, 231, 231);
+    bottom: -40.5%;
+    right: -2%;
+    user-select: none;
+    overflow-y: hidden;
 }
